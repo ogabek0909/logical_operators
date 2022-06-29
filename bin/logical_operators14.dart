@@ -7,5 +7,11 @@ Given a two-digit integer a,  check the following statement "All digits sum is o
     Returns:
         bool: answer
 */
+bool func(a) {
+  a > 9 && a < 100;
+  return (a % 10) % 2 == 1 && (a ~/ 10) % 2 == 1;
+}
 
-void main() {}
+void main() {
+  print(func(75));
+}
