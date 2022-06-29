@@ -8,5 +8,10 @@ Given two integers a, b,  check the following statement "At least one  of the nu
     Returns:
         bool: answer
 */
+bool func(a, b) {
+  return a < 0 || b < 0;
+}
 
-void main() {}
+void main() {
+  print(func(98, -6342879));
+}
