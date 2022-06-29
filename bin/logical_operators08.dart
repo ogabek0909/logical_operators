@@ -8,5 +8,10 @@ Create a function argument  called a, b of type int
     Returns:
         bool: answer
 */
+bool func(a, b) {
+  return 1 - a % 2 == 1 || 1 - b % 2 == 1;
+}
 
-void main() {}
+void main() {
+  print(func(648, 74780));
+}
