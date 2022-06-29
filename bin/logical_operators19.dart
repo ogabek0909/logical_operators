@@ -17,5 +17,5 @@ bool func(x) {
 }
 
 void main() {
-  print(func(659));
+  print(func(679));
 }
