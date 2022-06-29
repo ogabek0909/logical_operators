@@ -7,5 +7,19 @@ Given a five-digit integer a, check the following statement "All digits of the n
     Returns:
         bool: answer
 */
+bool func(a) {
+  int q = a % 10;
+  a ~/= 10;
+  int w = a % 10;
+  a ~/= 10;
+  int e = a % 10;
+  a ~/= 10;
+  int r = a % 10;
+  int t = a ~/ 10;
 
-void main() {}
+  return q < w && w < e && e < r && r < t;
+}
+
+void main() {
+  print(func(98432));
+}
